@@ -11,7 +11,7 @@ int main()
     }
 
     //precompute or pre calculate
-    int hash[15] = {0};
+    int hash[1000000] = {0};
     for(int i = 0; i<n; i++){
         hash[arr[i]] += 1;      // go to the index of aar[i] and update hash
     }
