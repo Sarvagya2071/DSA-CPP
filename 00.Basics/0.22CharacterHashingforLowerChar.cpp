@@ -7,8 +7,8 @@ int main()
     cin>>s;
 
     //pre compute
-    int hash[26] = {0};
-    for(int i = 0; i < s.size(); i++){
+    int hash[26] = {0};     //The 26 storage is made due to the the ascii value of alphabets which is pre defined, just learn it.
+    for(int i = 0; i < s.size(); i++){      //Just for lower cases
         hash[s[i] - 'a']++;
     }
 
