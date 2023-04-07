@@ -6,8 +6,8 @@ int main()
     cin>>s;
 
     //pre compute
-    int hash[256] = {0};
-    for (int i = 0; i < s.size(); i++){
+    int hash[256] = {0};    //The 256 storage is the ascii value of alphabets which is pre defined, just learn it.
+    for (int i = 0; i < s.size(); i++){     //This is applicable for all lower and upper case
         hash[s[i]]++;
     }
 
