@@ -19,7 +19,8 @@ int main()
 
     //iterate in the map to see how map works
     for(auto it : mpp){
-        cout<<it.first<<"->"<<it.second<<endl;
+        cout<<it.first<<"->"<<it.second<<endl;   
+        
     }
       
     int q;
