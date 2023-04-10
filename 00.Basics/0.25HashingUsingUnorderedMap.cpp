@@ -10,7 +10,7 @@ int main()
         cin>>arr[i];
     }
     //precompute
-    unordered_map<long long, long long> mpp;
+    unordered_map<long long, long long> mpp;    // does not store in a sorted way
     for (int i = 0; i < n; i++){
         mpp[arr[i]]++;
     }
