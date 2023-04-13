@@ -20,7 +20,7 @@ int main()
         int number;
         cin>>number;
 
-        //fetch
+        //fetch 
         cout<<mpp[number]<<endl;
     }
     return 0;
