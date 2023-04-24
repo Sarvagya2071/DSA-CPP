@@ -2,11 +2,16 @@
 using namespace std;
 
 void selection_sort(int arr[], int n){
+	bool swapstatus = false;
 	for(int i = 0; i <= n-2; i++){
 		int minimum = i;
 		for(int j = i; j <= n-1; j++){
-			if(arr[j] < arr[minimum]) minimum = j;
+			if(arr[j] < arr[minimum]){ 
+				minimum = j;
+				swapstatus = true;
+			}
 		}
+		if(swapstatus == false) break;
 		swap(arr[minimum], arr[i]);
 	}
 }
