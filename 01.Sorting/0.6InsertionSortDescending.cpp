@@ -18,7 +18,7 @@ void printarray(int arr[], int n){
     cout<<"\n";
 }
 
-int main(){
+int main(){ 
     int n;
     cin>>n;
     int arr[n];
