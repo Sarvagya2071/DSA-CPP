@@ -18,7 +18,7 @@ int main()
     cin>>q;
     while(q--){
         int number;
-        cin>>number;
+        cin>>number; 
 
         //fetch
         cout<<mpp[number]<<endl;
