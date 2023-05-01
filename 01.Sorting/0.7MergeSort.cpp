@@ -44,8 +44,8 @@ int main(){
     for(int i = 0; i < n; i++){
         cin>>arr[i];
     }
-    int low;
-    int high;
+    int low = 0;
+    int high = n - 1;
     sort(arr, low, high);
     for(int i = 0; i < n; i++){
         cout<<arr[i]<<" ";
