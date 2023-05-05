@@ -37,7 +37,7 @@ void sort(int arr[], int low, int high){
     merge(arr,low,mid,high);
 }
 
-int main(){
+int main(){ 
     int n;
     cin>>n;
     int arr[n];
