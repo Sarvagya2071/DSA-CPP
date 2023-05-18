@@ -19,6 +19,6 @@ int main(){
             secondLargest = arr[i];
         }
     }
-    cout<<secondLargest<<endl; 
+    cout<<secondLargest<<endl;
     return 0;
 }
