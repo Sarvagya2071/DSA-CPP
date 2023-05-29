@@ -279,32 +279,32 @@
 //     cout<<mp+1<<endl;
 // }
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main(){
-	int n, t, dollar = 1, ew, total = 0;
-	cin>>n>>t;
-	int weights[n];
-	for(int i = 0; i < n; i++){
-		cin>>weights[i];
-	}
-	int sum = 0;
-	for(int i = 0; i < n; i++){
-		sum = sum + weights[i];
-	}
+// int main(){
+// 	int n, t, dollar = 1, ew, total = 0;
+// 	cin>>n>>t;
+// 	int weights[n];
+// 	for(int i = 0; i < n; i++){
+// 		cin>>weights[i];
+// 	}
+// 	int sum = 0;
+// 	for(int i = 0; i < n; i++){
+// 		sum = sum + weights[i];
+// 	}
 
-	for( int i = 0; i < n; i++){
-		if(t > weights[i]){
-			ew = 1;
-			}
-	}
-	for( int i = 0; i < n; i++){
-		if(t < weights[i]){
-			ew = weights[i] - t;
-		}
-	}
-	total = ew;
-	cout<<total<<endl;
-	return 0;
-}
+// 	for( int i = 0; i < n; i++){
+// 		if(t > weights[i]){
+// 			ew = 1;
+// 			}
+// 	}
+// 	for( int i = 0; i < n; i++){
+// 		if(t < weights[i]){
+// 			ew = weights[i] - t;
+// 		}
+// 	}
+// 	total = ew;
+// 	cout<<total<<endl;
+// 	return 0;
+// }
