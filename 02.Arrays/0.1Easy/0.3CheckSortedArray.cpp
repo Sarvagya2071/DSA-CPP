@@ -9,7 +9,7 @@ int main (){
         cin >> arr[i];
     }
     int flag = 0;
-    for(int i = 0; i < n-1; i++){
+    for(int i = 0; i < n-1; i++){ 
         if (arr[i] > arr[i+1]){
             cout<<"Not Sorted"<<endl;
             flag = 1; 
