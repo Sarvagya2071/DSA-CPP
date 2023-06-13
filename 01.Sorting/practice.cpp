@@ -27,7 +27,8 @@
 //         }
 //     }
 //     if(a==b) cout<<"0";
-//     else cout<<"1";
+//     else if (a>b) cout << "positive"<<endl;
+//     else if (a<b) cout << "negative"<<endl;
 //     return 0;
 // }
 
@@ -60,13 +61,13 @@
 // int main(){
 //     int n;
 //     cin>>n;
-//     int count = 1;
+//     int count = 0;
 //     int ar[n];
 //     int currentmax = 0;
 //     for(int i = 0; i < n; i++){
 //         cin>>ar[i];
 //     }
-//     for(int i = 1; i < n; i++){
+//     for(int i = 0; i < n; i++){
 //             if(ar[i]>currentmax){
 //                 currentmax = ar[i];
 //                 count++;
