@@ -33,15 +33,32 @@ using namespace std;
 
 //     merge(v, s, mid, e, temp);
 // }
-int main(){
+// int main(){
     // vector<int> v = {7,5,6,1,2,4,8};
     // vector<int> temp(v);
     // mergeSort(v, 0, v.size()-1, temp);
     // for(int x : v)  cout<<x<<" ";
     // cout<<endl;
-    string s;
+    // string s;
     // cin>>s;
-    getline(cin, s, '%');
-    cout<<s<<endl;
+//     getline(cin, s, '%');
+//     cout<<s<<endl;
+//     return 0;
+// }
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++){
+        cin>>arr[i];
+    }
+    for (int i = 0; i < n; i++){
+        cout<<arr[i];
+    }
+    cout<<endl;
     return 0;
 }
