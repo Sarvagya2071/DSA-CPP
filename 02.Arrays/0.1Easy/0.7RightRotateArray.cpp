@@ -19,7 +19,7 @@ int main(){
         temp[i] = arr[t-k];
         t++;
     }
-    // //shifting all values to temp
+    // //shifting all values to temp 
     for(int i = 0; i < n - k; i++){
         temp[s] = arr[i];
         s++;
