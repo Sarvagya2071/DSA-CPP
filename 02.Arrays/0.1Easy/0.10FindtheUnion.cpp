@@ -16,15 +16,51 @@ int main(){
     }
 
     //brute
-    set<int>ans;
-    for(int i = 0; i < n1; i ++){
-        ans.insert(arr1[i]);
+    // set<int>ans;
+    // for(int i = 0; i < n1; i ++){
+    //     ans.insert(arr1[i]);
+    // }
+    // for(int i = 0; i < n2; i ++){
+    //     ans.insert(arr2[i]);
+    // }
+    // for(auto it : ans){
+    //     cout<<it<<" ";
+    // }
+    // cout<<endl;
+
+    //optimal
+    vector<int> ans;
+    int i = 0;
+    int j = 0;
+    while(i < n1 && j < n2){
+        if(arr1[i] <= arr2[j]){
+            if(ans.size() == 0 || ans.back() != arr1[i]){
+                ans.push_back(arr1[i]);
+            }
+            i++;
+        }
+        else{
+            if(ans.size() == 0 || ans.back() != arr2[j]){
+                ans.push_back(arr2[j]);
+            }
+            j++;
+        }
     }
-    for(int i = 0; i < n2; i ++){
-        ans.insert(arr2[i]);
+    //if elements are still left in array
+    while(i < n1){
+        if(ans.size() == 0 || ans.back() != arr1[i]){
+            ans.push_back(arr1[i]);
+        }
+        i++;
     }
-    for(auto it : ans){
-        cout<<it<<" ";
+    while(j < n2){
+        if(ans.size() == 0 || ans.back() != arr2[j]){
+            ans.push_back(arr2[j]);
+        }
+        j++;
+    }
+    for(int i = 0; i < ans.size(); i++){
+        cout<<ans[i]<<" ";
     }
     cout<<endl;
     return 0;
