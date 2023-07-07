@@ -28,24 +28,24 @@ int main(){
             if(mp[txt[j]] == 0) count--;
         }
 
-        //build the window
         if(j-i+1 < k){
             j++;
         }
 
-        //window size achieved
+        //window size gets equal to k
         else if(j-i+1 == k){
-            //1. find ans from calc
-            if(count == 0)  ans++;
+            if(count == 0){  
+                ans++;
+            }
             
-            //emove calculation for the element that will be left out while sliding
+            //removeing ith value while sliding 
             if(mp.find(txt[i]) != mp.end()){
                 mp[txt[i]]++;
                 if(mp[txt[i]] == 1){
                     count++;
                 }
             }
-            //slide the window
+            //sliding the window
             i++;
             j++;
         }
