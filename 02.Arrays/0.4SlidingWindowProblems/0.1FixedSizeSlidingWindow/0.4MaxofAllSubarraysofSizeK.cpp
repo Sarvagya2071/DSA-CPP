@@ -28,7 +28,7 @@ int main(){
         if(j-i+1 < k){
             j++;
         }
-        //if subarray reaches the window size
+        //if subarray reaches the window size 
         if(j-i+1==k){
             //ans calculation
             ans.push_back(ls.front());
