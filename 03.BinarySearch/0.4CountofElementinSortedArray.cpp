@@ -56,6 +56,6 @@ int main(){
     fo(arr, n, ele);
     so(arr, n, ele);
     count = so(arr, n, ele) - fo(arr, n, ele) + 1;
-    cout<<count<<endl; 
+    cout<<count<<endl;
     return 0;
 }
