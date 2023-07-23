@@ -10,7 +10,7 @@ int main(){
         cin>>arr[i];
     }
     int start = 0;
-    int end = n-1;
+    int end = n-1; 
     
     return 0;
 }
