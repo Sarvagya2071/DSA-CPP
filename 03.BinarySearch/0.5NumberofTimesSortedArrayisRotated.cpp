@@ -12,5 +12,6 @@ int main(){
     int start = 0;
     int end = n-1;
     
+    
     return 0;
 }
