@@ -1,6 +1,6 @@
-#include<iostream>
-#include<vector>
-using namespace std;
+// #include<iostream>
+// #include<vector>
+// using namespace std;
 // void merge(vector<int> &v, int s, int mid, int e, vector<int> &temp){
 
 //     int r1 = s;
@@ -46,17 +46,36 @@ using namespace std;
 //     return 0;
 // }
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main(){
-    int n;
-    cin >> n;
-    long long cnt = 0; 
-    while(n > 0){
-        cnt += n/5; 
-        n /= 5; 
-    }
-    cout<<cnt<<endl;
+// int main(){
+//     int n;
+//     cin >> n;
+//     long long cnt = 0; 
+//     while(n > 0){
+//         cnt += n/5; 
+//         n /= 5; 
+//     }
+//     cout<<cnt<<endl;
+//     return 0;
+// }
+
+#include <iostream>
+using namespace std;
+ 
+// Driver code
+int main()
+{
+    int x, y;
+    int result;
+ 
+    x = 10;
+    y = 8;
+ 
+    // modulo for floating point values
+    result = x % y;
+    cout << result;
+ 
     return 0;
 }
