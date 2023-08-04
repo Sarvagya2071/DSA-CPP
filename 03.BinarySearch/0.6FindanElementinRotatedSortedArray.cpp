@@ -20,7 +20,7 @@ int main(){
             cout<<mid<<endl;
             break;
         }
-        if(arr[start] < arr[mid]){
+        if(arr[start] <= arr[mid]){
             if(k <= arr[mid] && k >= arr[start])
                 end = mid-1;
             else
