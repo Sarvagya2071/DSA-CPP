@@ -11,5 +11,6 @@ int main(){
         cin>>arr[i];
     }
     int start = 0;
+    
     return 0;
 }
