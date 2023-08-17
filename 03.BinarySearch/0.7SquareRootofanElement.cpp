@@ -22,6 +22,7 @@ int main(){
             start = mid+1;
         }
     }
+    
     cout<<end<<endl;
     return 0;
 }
