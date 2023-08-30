@@ -21,6 +21,7 @@ int main(){
         else if(k < n){
             start = mid+1;
         }
+        
     }
     cout<<end<<endl;
     return 0;
