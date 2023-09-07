@@ -61,21 +61,36 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+ 
+// // Driver code
+// int main()
+// {
+//     int x, y;
+//     int result;
+ 
+//     x = 10;
+//     y = 8;
+ 
+//     // modulo for floating point values
+//     result = x % y;
+//     cout << result;
+ 
+//     return 0;
+// }
+
 #include <iostream>
 using namespace std;
- 
-// Driver code
-int main()
-{
-    int x, y;
-    int result;
- 
-    x = 10;
-    y = 8;
- 
-    // modulo for floating point values
-    result = x % y;
-    cout << result;
- 
+
+void number(int n){
+    if(n==0) return;
+    number(n++);
+}
+
+int main(){
+    int n;
+    n = 1;
+    number(n);
     return 0;
 }
