@@ -89,8 +89,13 @@ void number(int n){
 }
 
 int main(){
-    int n;
-    n = 1;
-    number(n);
+
+    for(int i = 1; i<5; i++){
+        int x = 5; 
+        x++;
+        cout<<x<<" ";
+    }
+    cout<<endl;
+    
     return 0;
 }
