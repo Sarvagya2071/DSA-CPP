@@ -32,6 +32,7 @@ int main(){
                 i++;
             }
             j++;
+            
         }
     }
     cout<<len<<endl;
