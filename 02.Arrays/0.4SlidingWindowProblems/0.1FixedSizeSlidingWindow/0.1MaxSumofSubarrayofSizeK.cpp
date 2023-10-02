@@ -38,6 +38,7 @@ int main(){
             j++;
         }
     }
+    
     cout<<smax<<endl;
     return 0;
 }
