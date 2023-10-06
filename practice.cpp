@@ -80,22 +80,92 @@
 //     return 0;
 // }
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-void number(int n){
-    if(n==0) return;
-    number(n++);
-}
+// void number(int n){
+//     if(n==0) return;
+//     number(n++);
+// }
 
-int main(){
+// int main(){
 
-    for(int i = 1; i<5; i++){
-        int x = 5; 
-        x++;
-        cout<<x<<" ";
-    }
-    cout<<endl;
+//     for(int i = 1; i<5; i++){
+//         int x = 5; 
+//         x++;
+//         cout<<x<<" ";
+//     }
+//     cout<<endl;
     
-    return 0;
-}
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+
+// using namespace std;
+
+// unordered_map<string, string> wordToDigit = {
+//     {"zero", "0"},
+//     {"one", "1"},
+//     {"two", "2"},
+//     {"three", "3"},
+//     {"four", "4"},
+//     {"five", "5"},
+//     {"six", "6"},
+//     {"seven", "7"},
+//     {"eight", "8"},
+//     {"nine", "9"}
+// };
+
+// string getPhoneNumber(string s) {
+//     istringstream iss(s);
+//     string word;
+//     string result;
+//     string currentWord = "";
+//     int count = 1;
+
+//     while (iss >> word) {
+//         if (word == currentWord) {
+//             count++;
+//         } else {
+//             if (count == 2) {
+//                 result += "double";
+//             } else if (count == 3) {
+//                 result += "triple";
+//             } else if (count > 3) {
+//                 result += "double" + to_string(count);
+//             }
+
+//             result += wordToDigit[word];
+
+//             currentWord = word;
+//             count = 1;
+//         }
+//     }
+
+//     if (count == 2) {
+//         result += "double";
+//     } else if (count == 3) {
+//         result += "triple";
+//     } else if (count > 3) {
+//         result += "double" + to_string(count);
+//     }
+
+//     return result;
+// }
+
+// int main() {
+//     ofstream fout(getenv("OUTPUT_PATH"));
+
+//     string s;
+//     getline(cin, s);
+
+//     string result = getPhoneNumber(s);
+
+//     fout << result << "\n";
+
+//     fout.close();
+
+//     return 0;
+// }
