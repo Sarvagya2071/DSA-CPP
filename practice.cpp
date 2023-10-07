@@ -169,3 +169,36 @@
 
 //     return 0;
 // }
+
+
+
+
+//Remove Element and print the remaining
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i = 0; i < n; i++){
+        cin>>arr[i];
+    }
+    int val;
+    cin>>val;
+
+    int a = 0;
+    for(int i = 0; i < n; i++){
+        if(arr[i] != val){
+            arr[a] = arr[i];
+            a++;
+        }
+    }
+
+    for(int i = 0; i < a; i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<"\n";
+    cout<<a<<endl;
+    return 0;
+}
