@@ -34,6 +34,7 @@ int main(){
             j++;
         }
     }
+    
     cout<<len<<endl;
     return 0;
 }
