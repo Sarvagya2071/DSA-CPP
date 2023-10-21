@@ -174,31 +174,54 @@
 
 
 //Remove Element and print the remaining
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     int arr[n];
+//     for(int i = 0; i < n; i++){
+//         cin>>arr[i];
+//     }
+//     int val;
+//     cin>>val;
+
+//     int a = 0;
+//     for(int i = 0; i < n; i++){
+//         if(arr[i] != val){
+//             arr[a] = arr[i];
+//             a++;
+//         }
+//     }
+
+//     for(int i = 0; i < a; i++){
+//         cout<<arr[i]<<" ";
+//     }
+//     cout<<"\n";
+//     cout<<a<<endl;
+//     return 0;
+// }
+
+//Prime or not
+
 #include<iostream>
 using namespace std;
 
 int main(){
     int n;
     cin>>n;
-    int arr[n];
-    for(int i = 0; i < n; i++){
-        cin>>arr[i];
-    }
-    int val;
-    cin>>val;
-
-    int a = 0;
-    for(int i = 0; i < n; i++){
-        if(arr[i] != val){
-            arr[a] = arr[i];
-            a++;
+    int flag = 0;
+    //square root tak chota factor mil jaega
+    for(int i = 1; i <= sqrt(n); i++){
+        if(n%i == 0){
+            flag = 1;
+            break;
         }
     }
-
-    for(int i = 0; i < a; i++){
-        cout<<arr[i]<<" ";
-    }
-    cout<<"\n";
-    cout<<a<<endl;
+    if(flag == 0)
+        cout<<n<<" is a Prime Number"<<endl;
+    else
+        cout<<n<<" is not a Prime Number"<<endl;
     return 0;
 }
