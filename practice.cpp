@@ -205,23 +205,49 @@
 
 //Prime or not
 
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     int flag = 0;
+//     //square root tak chota factor mil jaega
+//     for(int i = 1; i <= sqrt(n); i++){
+//         if(n%i == 0){
+//             flag = 1;
+//             break;
+//         }
+//     }
+//     if(flag == 0)
+//         cout<<n<<" is a Prime Number"<<endl;
+//     else
+//         cout<<n<<" is not a Prime Number"<<endl;
+//     return 0;
+// }
+
+//Print the Prime Numbers
 #include<iostream>
 using namespace std;
 
 int main(){
-    int n;
-    cin>>n;
+    int a;
+    cin>>a;
+    int b;
+    cin>>b;
     int flag = 0;
-    //square root tak chota factor mil jaega
-    for(int i = 1; i <= sqrt(n); i++){
-        if(n%i == 0){
-            flag = 1;
-            break;
+    for(int i = a; i <= b; i++){
+        for(int j = 1; j <= sqrt(i); j++){
+            if(j%i==0){
+                flag = 1;
+                break;
+            }
         }
+        if(flag == 0){
+            cout<<i<<" ";
+        }
+        int flag = 0;
     }
-    if(flag == 0)
-        cout<<n<<" is a Prime Number"<<endl;
-    else
-        cout<<n<<" is not a Prime Number"<<endl;
+    cout<<"\n";
     return 0;
 }
