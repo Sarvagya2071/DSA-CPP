@@ -247,7 +247,7 @@ int main(){
             cout<<i<<" ";
         }
         int flag = 0;
-    }
+    } 
     cout<<"\n";
     return 0;
 }
