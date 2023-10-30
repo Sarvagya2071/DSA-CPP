@@ -242,6 +242,7 @@ int main(){
                 flag = 1;
                 break;
             }
+            
         }
         if(flag == 0){
             cout<<i<<" ";
