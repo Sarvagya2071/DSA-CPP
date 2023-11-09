@@ -13,5 +13,10 @@ int main(){
             }
         }
     }
+    sort(ls.begin(), ls.end());
+    for(int i = 0; i < ls.size(); i++){
+        cout<<ls[i]<<" ";
+    }
+    cout<<endl;
     return 0;
 }
