@@ -225,7 +225,6 @@ int main(){
     return 0;
 }
 
-
 //Print the Prime Numbers
 // #include<iostream>
 // using namespace std;
