@@ -211,8 +211,13 @@ int main(){
     int n;
     cin>>n;
     int flag = 0;
+
+    if(n <= 1){
+        cout<< "Not a prime number"<<endl;
+        return 0;
+    }
     //square root tak chota factor mil jaega
-    for(int i = 1; i <= sqrt(n); i++){
+    for(int i = 2; i <= sqrt(n); i++){
         if(n%i == 0){
             flag = 1;
             break;
