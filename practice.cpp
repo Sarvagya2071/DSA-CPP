@@ -155,7 +155,6 @@
 //     return result;
 // }
 
-
 // int main() {
 //     ofstream fout(getenv("OUTPUT_PATH"));
 
