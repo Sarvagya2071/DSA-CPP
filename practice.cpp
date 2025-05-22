@@ -212,7 +212,6 @@ int main(){
     cin>>n;
     int flag = 0;
 
-    
     if(n <= 1){
         cout<< "Not a prime number"<<endl;
         return 0;
